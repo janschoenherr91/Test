@@ -19,7 +19,13 @@ app.
         readtodb: function () {
             var users = sync.$asObject();
             return users;
-        }
+        },
+
+            deletedb: function()
+            {
+                sync.$remove();
+
+            }
     };
     return service;
 }]);

@@ -15,19 +15,13 @@ app
 
                 $scope.users = firebase.readtodb();
 
-
-                
-
                 $scope.addUser = function() {
                     $scope.users = firebase.writetodb();
-
-
-
-
                 };
 
-
-
+                $scope.delUser = function() {
+                    $scope.users = firebase.deletedb();
+                }
             }
     ]);
 

@@ -1,6 +1,7 @@
 <div class="jumbotron">
   <h4>Personen</h4>
     <button ng-click="addUser()">add User</button>
+    <button ng-click="delUser()">delete all Users</button>
     <table ng-Controller="MainCtrl">
    <tr ng-repeat="user in users">
     <td>Username: {{user.Username}}</td>
