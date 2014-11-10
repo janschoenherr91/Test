@@ -21,7 +21,15 @@ app
 
                 $scope.delUser = function() {
                     $scope.users = firebase.deletedb();
+                };
+
+                $scope.delete = function(key)
+                {
+                   // console.log(key);
+                    var itemRef = new Firebase("https://intense-torch-6714.firebaseio.com" + '/' + key);
+                    itemRef.remove();
                 }
+
             }
     ]);
 

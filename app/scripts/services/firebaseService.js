@@ -24,16 +24,19 @@ app.
             deletedb: function()
             {
 
-                //sync.$remove();
-                var users =service.readtodb();
+                sync.$remove();
+                /* var users =service.readtodb();
                 var array = Object.keys(users);
 
                sync.$remove(array[3]);
 
-                //sync.$remove({Username: 'User1'});
+                sync.$remove({Username: 'User1'}); */
                 number=1;
 
             }
+
+
+
     };
     return service;
 }]);
